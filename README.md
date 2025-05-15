@@ -1,12 +1,43 @@
-# React + Vite
+# TeXgen Frontend [![Status](https://img.shields.io/badge/status-in--development-red)]()
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web interface for [TeXgen](https://github.com/H3ct0r55/TeXgen), a LaTeX table generator that transforms CSV/Excel data into clean LaTeX tabular environments via a JSON config.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Features
 
-## Expanding the ESLint configuration
+- Upload CSV or Excel files
+- Input JSON configuration interactively
+- Preview or download LaTeX table output
+- Connects to the TeXgen API on `localhost:8000`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Setup
+
+```bash
+git clone https://github.com/H3ct0r55/TeXgen-frontend.git
+cd TeXgen-frontend
+npm install
+npm run dev
+```
+
+Make sure the [TeXgen backend](https://github.com/H3ct0r55/TeXgen) is running at `localhost:8000`.
+
+---
+
+## 📁 Project Structure
+
+- `src/components/`: Upload interface, JSON config form, preview pane
+- `src/api/`: API handler for sending files and config to backend
+
+---
+
+## 🛣 Roadmap
+
+- [ ] Live LaTeX preview
+- [ ] Dark mode
+- [ ] Input validation and presets
+- [ ] Deployment options (GH Pages, Docker)
+
+---
